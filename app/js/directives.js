@@ -10,6 +10,7 @@ angular.module('myApp.directives', []).
     };
   }])
 .directive('venkat', function () {
+
     return {
         scope: {},
         restrict: 'E',
@@ -19,7 +20,6 @@ angular.module('myApp.directives', []).
         link: function (scope, element, attrs) {
             var katattr = attrs.mycolor || "red";
             element.bind('mouseover', function (e) {
-                //    alert('hello');
                 element.css("color", katattr);
             });
             element.bind('mouseleave', function (e) {
