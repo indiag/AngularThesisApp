@@ -1,0 +1,107 @@
+body {
+	color: #2c373b;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	line-height: 2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding-top:1em;
+	color: #2c373b;
+	font-weight: 600;
+}
+
+#nav a {
+	color: #fff;
+	font-style: italic;
+	text-decoration: none;
+}
+
+#hero {
+    background: #12c2ee;
+	color: #fff;
+	text-align: center;
+}
+
+#footer {
+	color: #62696c;
+	text-align: center;
+}
+
+input[type=number]
+{
+    background-color: #BFBDBD;
+    border:solid 1px #BFBDBD;
+    color: #369ab8;
+    height: 28px;
+    padding-left:10px;
+    width: 191px;
+    box-shadow: 2px 2px 0 #828181 inset;
+}
+
+canvas
+{
+    top:0;
+    left:0;
+}
+
+/* Responsive Images */
+img, img.scale-with-grid { outline: 0; max-width: 100%; height: auto; }
+
+
+
+
+#media {
+    margin-top: 1.5em;
+    float:right;
+    border: none;
+}
+
+
+.ajaxHeader {
+    margin-bottom: 50px;
+}
+
+.venkatclass{ color: blue;}
+
+
+
+.boxgrid {
+    width: 325px;
+    height: 260px;
+    margin: 10px;
+    float: left;
+    background: #161613;
+    border: solid 2px #8399AF;
+    overflow: hidden;
+    position: relative;
+}
+
+ .boxgrid img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 0;
+    }
+
+ .boxgrid p {
+        padding: 0 10px;
+        color: #afafaf;
+        font-weight: bold;
+        font: 10pt "Lucida Grande", Arial, sans-serif;
+    }
+
+.boxcaption {
+    float: left;
+    position: absolute;
+    background: #000;
+    height: 100px;
+    width: 100%;
+    opacity: .8;
+    /* For IE 5-7 */
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    /* For IE 8 */
+    -MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+
+ 

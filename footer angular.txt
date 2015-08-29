@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="-2u 9u">
+            <div id="footer">
+
+                <ul>
+                    <li class ="ulfooter"><a href="http://www.dublincity.ie/RecreationandCulture/SportsFacilities/LeisureCentres/Locations/markievicz/pages/markieviczleisurecentre.aspx">Markievicz Leisure Centre</a>
+               &nbsp;| &nbsp; </li>
+                    <li class ="ulfooter"><a href="http://poolandspa.ie/swimming_pool_suppliers/index.htm"> Poolandspa</a> &nbsp;| &nbsp;</li>
+                    <li class ="ulfooter"><a href="http://www.grosvenorpools.com/index.html">Grosvenorpools</a></li>
+                </ul>
+            </div>
+        </div>
+
+</div>
