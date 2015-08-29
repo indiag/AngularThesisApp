@@ -63,3 +63,45 @@ img, img.scale-with-grid { outline: 0; max-width: 100%; height: auto; }
 }
 
 .venkatclass{ color: blue;}
+
+
+
+.boxgrid {
+    width: 325px;
+    height: 260px;
+    margin: 10px;
+    float: left;
+    background: #161613;
+    border: solid 2px #8399AF;
+    overflow: hidden;
+    position: relative;
+}
+
+ .boxgrid img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 0;
+    }
+
+ .boxgrid p {
+        padding: 0 10px;
+        color: #afafaf;
+        font-weight: bold;
+        font: 10pt "Lucida Grande", Arial, sans-serif;
+    }
+
+.boxcaption {
+    float: left;
+    position: absolute;
+    background: #000;
+    height: 100px;
+    width: 100%;
+    opacity: .8;
+    /* For IE 5-7 */
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    /* For IE 8 */
+    -MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+
+ 

@@ -7,8 +7,6 @@
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600|Source+Code+Pro" rel="stylesheet" />
     <script src="js/vendor/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="js/canvasjs.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/vendor/skel.min.js"></script>
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/main.css"/>
     <link rel="stylesheet" type="text/css" href="css/angular.css" />
@@ -17,9 +15,8 @@
     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <link rel="stylesheet" href="css/jquery-ui.css"/>
     <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
-
     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
-
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
     <div class="container">
@@ -30,19 +27,23 @@
 
             </div>
             <nav class="{{active}}">
-                <a href="#/app/view1" ng-click="active='home'" class="home">Home</a>
-                <a href="#/view3" ng-click="active='partialThree'" class="partialThree">Pool Locations</a>
-                <a href="#/view4" ng-click="active='partialFour'" class="partialFour">Statistics</a>
-                <a href="#/view6" ng-click="active='partialSix'" class="partialSix">Log in</a>
-                <a href="#/view9" ng-click="active='partialNine'" class="partialNine">Gallery</a>
+                <a href="#/app/view1" ng-click="active='home'" class="home">Directives</a>
+                <a href="#/view6" ng-click="active='partialSix'" class="partialSix">Data Binding</a>
+                <a href="#/view9" ng-click="active='partialNine'" class="partialNine">Nested Routing</a>
                              
             </nav>
+
+           
+           <div id="angularlogo"><img src="img/angular.png" geight="150" width="150" />  </div>  
 
 
             <!-- Hero -->
             <section>
                 <div ng-view></div>
             </section>
+
+
+            
 
             <div id="loginid" >You have Logged in successfully</div>
 
@@ -59,22 +60,15 @@
         <script src="js/controllers.js"></script>
         <script src="js/filters.js"></script>
         <script src="js/directives.js"></script>
-
         <script src="js/vendor/ui-utils.js"></script>
         <script src="js/googlemap.js"></script>
         <script src="js/location.js"></script>
         <script src="js/angular-sanitize.min.js"></script>
-
-
-
-
-
-            <!-- FlexSlider -->
-         <script  src="js/jquery.flexslider.js"></script>
-         <script src="js/main2.js"></script>
-
-            <script src="js/angular-flexslider.js"></script>
-
-
+        <script src="angular.min.js"></script>
+         
+        <!-- FlexSlider -->
+        <script  src="js/jquery.flexslider.js"></script>
+        <script src="js/main2.js"></script>
+        <script src="js/angular-flexslider.js"></script>
 </body>
 </html>

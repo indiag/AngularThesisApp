@@ -26,3 +26,15 @@ config(['$routeProvider', function ($routeProvider) {
 
     $routeProvider.otherwise({ redirectTo: '/view1' });
 }]);
+
+var app = angular.module('MyApp', []);
+
+app.controller('MainController', function ($scope) {
+
+    $scope.$watch('decimal', function () {
+        var temp = parseInt($scope.decimalv, 10).toString(2);
+        if (temp !== 'NaN') {
+            $scope.binary = temp + " (binary)"
+        }
+    });
+});

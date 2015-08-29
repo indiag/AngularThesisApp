@@ -1,16 +1,42 @@
-window._skel_config = {
-    prefix: 'css/style',
-    preloadStyleSheets: true,
-    resetCSS: true,
-    boxModel: 'border',
-    grid: { gutters: 30 },
-    breakpoints: {
-        wide: { range: '1200-', containers: 'fluid', grid: { gutters: 50 } },
-        narrow: { range: '481-1199', containers: 'fluid' },
-        mobile: { range: '-480', containers: 'fluid', lockViewport: true, grid: { collapse: true } }
-    }
-};
-
+$(document).ready(function () {
+    //To switch directions up/down and left/right just place a "-" in front of the top/left attribute
+    //Vertical Sliding
+    $('.boxgrid.slidedown').hover(function () {
+        $(".cover", this).stop().animate({ top: '-260px' }, { queue: false, duration: 300 });
+    }, function () {
+        $(".cover", this).stop().animate({ top: '0px' }, { queue: false, duration: 300 });
+    });
+    //Horizontal Sliding
+    $('.boxgrid.slideright').hover(function () {
+        $(".cover", this).stop().animate({ left: '325px' }, { queue: false, duration: 300 });
+    }, function () {
+        $(".cover", this).stop().animate({ left: '0px' }, { queue: false, duration: 300 });
+    });
+    //Diagnal Sliding
+    $('.boxgrid.thecombo').hover(function () {
+        $(".cover", this).stop().animate({ top: '260px', left: '325px' }, { queue: false, duration: 300 });
+    }, function () {
+        $(".cover", this).stop().animate({ top: '0px', left: '0px' }, { queue: false, duration: 300 });
+    });
+    //Partial Sliding (Only show some of background)
+    $('.boxgrid.peek').hover(function () {
+        $(".cover", this).stop().animate({ top: '90px' }, { queue: false, duration: 160 });
+    }, function () {
+        $(".cover", this).stop().animate({ top: '0px' }, { queue: false, duration: 160 });
+    });
+    //Full Caption Sliding (Hidden to Visible)
+    $('.boxgrid.captionfull').hover(function () {
+        $(".cover", this).stop().animate({ top: '160px' }, { queue: false, duration: 160 });
+    }, function () {
+        $(".cover", this).stop().animate({ top: '260px' }, { queue: false, duration: 160 });
+    });
+    //Caption Sliding (Partially Hidden to Visible)
+    $('.boxgrid.caption').hover(function () {
+        $(".cover", this).stop().animate({ top: '160px' }, { queue: false, duration: 160 });
+    }, function () {
+        $(".cover", this).stop().animate({ top: '220px' }, { queue: false, duration: 160 });
+    });
+});
 
 
 
